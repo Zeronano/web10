@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bank Mandiri - Terdepan, Terpercaya Tumbuh Bersama Anda</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index-desktop.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:1020px)" href="css/index-mobile.css"/>
+    <script src="jq.js"></script>
+    <script type="text/javascript">
+        function validasi() {
+            var nama = document.getElementById("nama").value;
+            var ttl = document.getElementById("ttl").value;
+            var tlp = document.getElementById("tlp").value;
+            var alamat = document.getElementById("alamat").value;
+            if (nama != "" && ttl!="" && tlp !="" && alamat!="") {
+                alert('Data anda akan kami proses');
+                return true;
+            }else{
+                alert('Anda harus mengisi data dengan lengkap !');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+                <div class="item-navbar">
+                    <img src="images/logo.png" width="20%">
+                </div>
+                <div class="item-navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Bisnis</a></li>
+                        <li><a href="">Prioritas</a></li>
+                        <li><a href="">Tenteng Mandiri</a></li>
+                        <li><a href="">Bantuan</a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="tabel">
+                   
+                        <form name="myForm" action="#" method="post" onsubmit="return validasi()">
+                            <p><h2>Buka tabungan</h2></p><br> 
+                            <table>
+                            <tr>
+                                <td>Nama</td>
+                                <td> <input type="text" name="nama" id="nama"></td>
+                            </tr>
+                            <tr>
+                                <td>TTL(dd/xx/yyyy)&emsp;</td>
+                                <td><input type="text" name="ttl" id="ttl"></td>
+                            </tr>
+                            <tr>
+                                <td>No.tlp&emsp;&emsp;</td>
+                                <td><input type="text" name="tlp" id="tlp"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Alamat&emsp;&emsp;</td>
+                                <td><textarea name="alamat" id="alamat" cols="30" rows="10"></textarea></td>
+                            </tr>
+                            </table>   
+                            <input type="submit" value="submit">
+                            </form>
+            </div>
+            <div class="tabel">
+                <div>
+                    <h2>Tabungan terbanyak</h2><br>
+                <table>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Uang Tabungan</th>
+                    </tr>
+                    <tr>
+                        <td>Aseng</td>
+                        <td>$25.95</td>
+                    </tr>
+                    <tr>
+                        <td>Doni</td>
+                        <td>$17.90</td>
+                    </tr>
+                    <tr>
+                        <td>Gentayo</td>
+                        <td>$15.78</td>
+                    </tr>
+                    <tr>
+                        <td>Dewa</td>
+                        <td>$12.10</td>
+                    </tr>
+                    <tr>
+                        <td>Water</td>
+                        <td>$10.99</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <div class="footer">Copyright by Yunus</div>
+    </div> 
+    
+</body>
+</html>
